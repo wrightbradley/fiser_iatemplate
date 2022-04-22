@@ -76,13 +76,14 @@ class sergiiatemplate:
 
 ### Table
 #### Normal Table
-|Header |Column 1 | Column 2 | Column 3  | 
+|Header |Column 1 | Column 2 | Column 3  |
 |:--- |:---- |:----:| ----:|
 |1. Row| is | is | is  |
 |2. Row| left | nicely | right  |
-|3. Row| aligned | centered | aligned  | 
+|3. Row| aligned | centered | aligned  |
+
 #### CSV Table
-/example.csv
+example.csv
 
 ### Mathematical
 An example of math inline ${e}^{i\pi }+1=0$
