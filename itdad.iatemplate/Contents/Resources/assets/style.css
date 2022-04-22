@@ -53,7 +53,8 @@
 
 /* Assumed from min-width: 80px */
 html {
-  font-family: "Helvetica", "Arial", Keyboard, Times, "Hiragino Mincho ProN", "ヒラギノ明朝 ProN", serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku */
+  font-family: "Helvetica", "Arial", Keyboard, Times, "Hiragino Mincho ProN",
+    "ヒラギノ明朝 ProN", serif; /* Times for Cyrillic, Hiragino to prevent Japanese displaying in Kaku */
   font-size: 1px; /* Overridden by responsive font sizing */
   line-height: calc(31 / 19); /* 1.6316 = 31px @ font-size: 19px */
 }
@@ -174,7 +175,6 @@ html {
     font-size: 9px;
   }
 }
-
 
 @media screen and (min-width: 200px) and (min-device-width: 1152px) {
   html {
@@ -358,7 +358,7 @@ h4 {
   HACK Temporary workaround via all caps in Helvetica Bold */
 h5,
 h6 {
-/*  font-variant-caps: small-caps;
+  /*  font-variant-caps: small-caps;
   -webkit-font-feature-settings: "smcp";
   -moz-font-feature-settings: "smcp";
   -ms-font-feature-settings: "smcp";
@@ -367,7 +367,6 @@ h6 {
   text-transform: lowercase; */
   font-weight: 700;
   text-transform: uppercase;
-
 }
 
 /* HACK Fudge a baseline match between h6 and text when run-in */
@@ -383,7 +382,6 @@ h6 {
     margin-bottom: calc((0.65 / 16.4673) * -1em);
   }
 }
-
 
 /* Display h6 as run-in: see core.css */
 
@@ -423,7 +421,8 @@ table {
 }
 
 /* Collapse vertical margin between headers and block-level elements */
-:-webkit-any(h3, h4, h5) + :-webkit-any(p, ol, ul, dl, figure, blockquote, pre, table),
+:-webkit-any(h3, h4, h5)
+  + :-webkit-any(p, ol, ul, dl, figure, blockquote, pre, table),
 :-webkit-any(h1, h2, h3, h4, h5) + h6 + *,
 hr + h6 {
   margin-top: 0;
@@ -433,7 +432,9 @@ hr + h6 {
 @media screen and (min-width: 760px) {
   ul,
   ol {
-    padding-left: calc((40 / 19) * 1em); /* 2.1053em = ~40px for font-size: 19px. em works better for RWD than % */
+    padding-left: calc(
+      (40 / 19) * 1em
+    ); /* 2.1053em = ~40px for font-size: 19px. em works better for RWD than % */
   }
 }
 
@@ -445,7 +446,9 @@ ul {
 ul > li:before {
   content: "• ";
   float: left; /* Take out of flow to avoid changing left edge alignment or pushing child paragraph down */
-  margin-left: calc((21 / 19) * -1em); /* -1.1053em = 21px @ font-size: 19px. em works better for RWD than % */
+  margin-left: calc(
+    (21 / 19) * -1em
+  ); /* -1.1053em = 21px @ font-size: 19px. em works better for RWD than % */
 }
 
 /* Indent ordered lists in blockquotes */
@@ -502,7 +505,6 @@ h1 :-webkit-any(code, samp, kbd, strong) {
 :-webkit-any(h2, h4, h5, h6) :-webkit-any(code, samp, kbd) {
   font-weight: 600;
 }
-
 
 /* @media Rules */
 
@@ -565,7 +567,6 @@ h1 :-webkit-any(code, samp, kbd, strong) {
 .indent-paragraphs p + p {
   text-indent: calc((21 / 19) * 1em); /* 1.1053em = 21px @ font-size: 19px */
 }
-
 
 /* Night Mode */
 
@@ -642,5 +643,5 @@ ol .task-list-item {
 }*/
 
 div .flow {
-  width:auto;
+  width: auto;
 }

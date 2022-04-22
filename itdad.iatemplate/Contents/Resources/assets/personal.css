@@ -1,59 +1,58 @@
 table {
-    border:none !important;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font: normal 11px Arial, sans-serif;
+  border: none !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 11px Arial, sans-serif;
 }
 table thead {
-    border-radius: 4px;
-    background-color: #638cc7;
-    border: none !important; 
-    border-collapse: collapse;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    /* text-shadow: 1px 1px 1px #fff; */
+  border-radius: 4px;
+  background-color: #638cc7;
+  border: none !important;
+  border-collapse: collapse;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 table thead th {
-    background-color: #638cc7;
-    border: none !important; 
-    border-collapse: collapse;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    font: 11px Arial, sans-serif;
-    font-weight: bold;
-    /* text-shadow: 1px 1px 1px #fff; */
+  background-color: #638cc7;
+  border: none !important;
+  border-collapse: collapse;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font: 11px Arial, sans-serif;
+  font-weight: bold;
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 table tbody td {
-    border: none !important; 
-    border-collapse: collapse;
-    color: #333;
-    padding: 10px;
-    /* text-shadow: 1px 1px 1px #fff; */
+  border: none !important;
+  border-collapse: collapse;
+  color: #333;
+  padding: 10px;
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 table tbody {
-    border: none !important; 
-    border-collapse: collapse;
-    color: #333;
-    padding: 10px;
-    /* text-shadow: 1px 1px 1px #fff; */
+  border: none !important;
+  border-collapse: collapse;
+  color: #333;
+  padding: 10px;
+  /* text-shadow: 1px 1px 1px #fff; */
 }
 
 tr:nth-child(even) {
-    background-color: #b6cada;
-    color: #d5e3ee;
- }
+  background-color: #b6cada;
+  color: #d5e3ee;
+}
 
 /* Block Quote customizing */
 
-  blockquote {
-	background:		#b6cada;
-	border-left:	10px solid #638cc7;
-	margin:			1.5em 10px;
-	padding:		.5em 10px;
+blockquote {
+  background: #b6cada;
+  border-left: 10px solid #638cc7;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
 }
 blockquote p {
-	display:		inline;
+  display: inline;
 }
-

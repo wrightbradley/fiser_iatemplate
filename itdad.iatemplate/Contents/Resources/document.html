@@ -1,42 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-    <link rel="stylesheet" media="all" href="assets/normalize.css">
-    <link rel="stylesheet" media="all" href="assets/core.css">
-    <link rel="stylesheet" media="all" href="assets/style.css">
-    <link rel="stylesheet" media="all" href="assets/personal.css">      
-    <meta name="viewport" content="initial-scale=1, viewport-fit=cover">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" media="all" href="assets/normalize.css" />
+    <link rel="stylesheet" media="all" href="assets/core.css" />
+    <link rel="stylesheet" media="all" href="assets/style.css" />
+    <link rel="stylesheet" media="all" href="assets/personal.css" />
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover" />
 
     <!-- Jquery utility tool -->
     <!--<script src="modules/jquery/jquery.min.js"></script>-->
 
     <!-- Flow chart support -->
-    <script type="text/javascript" src="modules/snap.svg/snap.svg-min.js"></script>
-    <script type="text/javascript" src="modules/raphael/raphael.min.js"></script>
-    <script type="text/javascript" src="modules/flowchart/flowchart.min.js"></script>
+    <script
+      type="text/javascript"
+      src="modules/snap.svg/snap.svg-min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="modules/raphael/raphael.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="modules/flowchart/flowchart.min.js"
+    ></script>
 
     <!-- Mermaid add-on -->
-	<script src="modules/mermaid/mermaid.js"></script>
-	<script>mermaid.initialize({startOnLoad:true,theme:"forest"});</script>
+    <script src="modules/mermaid/mermaid.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, theme: "forest" });
+    </script>
 
     <!-- Graphic Libraries -->
     <script src="modules/chartjs/chart.js"></script>
     <script src="modules/chartist/chartist.min.js"></script>
-    <link rel="stylesheet" href="modules/chartist/chartist.min.css">
+    <link rel="stylesheet" href="modules/chartist/chartist.min.css" />
     <script src="modules/plotly/plotly-latest.min.js"></script>
 
     <!-- Prism HighLight -->
-    <link rel="stylesheet" media="all" href="modules/prism/prism.css">
-    <script src="modules/prism/prism.js"></script> 
+    <link rel="stylesheet" media="all" href="modules/prism/prism.css" />
+    <script src="modules/prism/prism.js"></script>
 
     <script type="text/javascript" src="modules/customjs.js"></script>
-    <style>.modebar{display: none !important;}</style>
-</head>
-<body data-document>&nbsp;
-  <h1>TESTING</h1>
-  <h2>Chartist</h2>
-  <pre><code class="chart-chartist">
+    <style>
+      .modebar {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body data-document>
+    &nbsp;
+    <h1>TESTING</h1>
+    <h2>Chartist</h2>
+    <pre><code class="chart-chartist">
     {
       labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
       series: [
@@ -45,8 +61,8 @@
       ]
     }
   </code></pre>
-  <h2>flowchart</h2>
-  <pre><code class="flow">
+    <h2>flowchart</h2>
+    <pre><code class="flow">
     st=>start: Need something to be translated!:>https://www.localistars.com[blank]
     e=>end: Be happy!:>https://youtu.be/e6Ede8hdU8c
     cond=>condition: Are you a client
@@ -55,14 +71,14 @@
     subt=>subroutine: Why should you become a localistar?:>https://www.localistars.com/for-translators.html
     op=>operation: Check out how it works!:>https://www.localistars.com/how-it-works.html
     io=>inputoutput: Work together with your partner!:>https://www.localistars.app/login
-    
+
     st->cond
     cond(no@client)->subc->op->io->e
     cond(yes@translator)->subt->op->io->e
   </code></pre>
-  <br>
-  <h2>Chart.js</h2>
-  <pre><code class="chart-chartjs">
+    <br />
+    <h2>Chart.js</h2>
+    <pre><code class="chart-chartjs">
 	  {
     type: "line",
 	data: {
@@ -77,7 +93,7 @@
     options: {}
 }
   </code></pre>
-  <pre><code class="chart-chartjs">
+    <pre><code class="chart-chartjs">
 	  {
     type: "line",
 	data: {
@@ -92,16 +108,16 @@
     options: {}
 }
   </code></pre>
-  <h2>Plotly</h2>
-  inicio grafico 1
-  <pre>
+    <h2>Plotly</h2>
+    inicio grafico 1
+    <pre>
     <code class="chart-plotly">
       [
       {
         x: [1, 2, 3, 4],
         y: [10, 15, 13, 17],
         type: "scatter"
-      },      
+      },
       {
         x: [1, 2, 3, 4],
         y: [16, 5, 11, 9],
@@ -110,15 +126,15 @@
       ]
     </code>
   </pre>
-  inicio grafico 2
-  <pre>
+    inicio grafico 2
+    <pre>
     <code class="chart-plotly">
       [
       {
         x: [1, 2, 3, 4],
         y: [10, 15, 13, 17],
         type: "scatter"
-      },      
+      },
       {
         x: [1, 2, 3, 4],
         y: [16, 5, 11, 9],
@@ -127,5 +143,5 @@
       ]
     </code>
   </pre>
-</body>
+  </body>
 </html>
